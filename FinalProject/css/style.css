@@ -1,0 +1,141 @@
+
+header{
+    height: 50vh;
+    background-color: rgb(53,58,64);
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+#hiddencard2{
+    display: none;
+}
+#hiddencard{
+    display: none;
+}
+#firstHide{
+    display: none;
+}
+#secondtHide{
+    display: none;
+}
+.cerImg{
+    max-width: -webkit-fill-available;
+}
+
+header img{
+    border-radius: 50%;
+    max-width: 30vh;
+}
+.miniHeader{
+    height: 30vh;
+}
+.pageBody{
+    padding-top: 10%;
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: -10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 20%;
+    max-width: inherit;
+
+}
+/*.sticky footer*/
+footer{
+    line-height: 10vh;
+    background-color: rgb(53,58,64);
+    color:white;
+    text-align: center;
+    padding-top: 3vh;
+}
+.info{
+    display: block;
+}
+img{
+    width: 40vh;
+    padding-bottom: 5vh;
+    
+}
+.img-continer{
+display: inline;
+}
+.row {
+    display: block;
+    margin: 1vh;
+}
+.card{
+    margin: 1vh;
+}
+
+
+@media  screen and (min-width:772px) {
+    .section{
+        display: flex;
+    }
+    .section p{
+        text-align: left;
+        font-family: monospace;
+        padding-top: 20%;
+    }
+    img{
+        display: inline-block;
+        width: 25vh;
+    }
+    
+    .languages{
+        display: flex;
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: flex-end;
+
+    }
+    
+    
+    
+    .row{
+        text-align: center;
+    }
+    .pageBody{
+        
+        display: inline-flex;
+    }
+    
+    .contact img{
+        min-height: 35vh;
+    }
+    .info{
+        display: block;
+    }
+}
+/* Add a third viewport layout*/
+@media  screen and (min-width:992px) {
+    img{
+        width: 30vh;
+    }
+    .card{
+        max-width: 30%;
+        display: inline-block;
+        float: left;
+        min-height: 50vh;
+        
+        }
+    .contact {
+        display: grid;
+    
+        }
+}
+/* */
+@media (prefers-color-scheme: dark) {
+    body{
+        background: rgb(53,58,64);
+        color:rgb(255, 255, 255);
+    }
+    img{
+        background-color:  rgb(53,58,64);
+    }
+    .card{
+        background-color:  rgb(53,58,64);
+    }
+}

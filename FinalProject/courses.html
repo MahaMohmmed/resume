@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("header.html"); 
+        });
+    </script> 
+    <script src="function.js" ></script>
+    <title>courses</title>
+</head>
+<body>
+    <main>
+        <header class="miniHeader">
+            <nav id="header">
+            </nav>
+            <h1>Courses</h1>
+        </header>
+        <div class="pageBody">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+            <div class="card">
+                <img src="/img/Udacity-logo-1.png" class="card-img-top" alt="udacity logo" id="firstcard">
+                <div class="card-body">
+                <h5 class="card-title">Full Stack Developer Track</h5>
+                <p class="card-text">Udacity.</p>
+                </div>
+            
+            <div>
+            <img src="/img/udacityCer.png" alt="udacity certification" id="hiddencard" class="cerImg">
+            <!--add jscode -->
+            <button onclick="showfirstImg()" class="btn btn-secondary" id="firstbutton"> Show certification </button>
+            <button onclick="hidefirstButton()" class="btn btn-secondary" id="firstHide"> Hide certification </button>
+
+            </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card">
+                <img src="/img/CodingDojo.png" class="card-img-top" alt="codindojo logo" id="firstcard2">
+                <div class="card-body">
+                <h5 class="card-title">Web Develoment</h5>
+                <p class="card-text">Coding Dojo(Saudi Digital Academy).</p>
+                </div>
+        
+            <div>
+            <img src="/img/codingdojoCer.png" alt="codingdojo certification" id="hiddencard2" class="cerImg">
+            <button onclick="hideSecondButton()" class="btn btn-secondary" id="secondtHide"> Hide certification </button>
+            <button onclick="showImg()" class="btn btn-secondary" id="secondeButton"> Show certification </button>
+            </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card">
+                <img src="/img/coursera.png" class="card-img-top" alt="Coursera logo">
+                <div class="card-body">
+                <h5 class="card-title">Web Develoment Track</h5>
+                <p class="card-text">Coursera(Saudi Digital Academy).</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>maha Aljohani 2023</p>
+        </footer>
+        
+    </main>
+    
+</body>
+</html>
+
